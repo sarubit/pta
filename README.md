@@ -4,7 +4,7 @@ Este projeto implementa um servidor para o Protocolo de Transferência de Arquiv
 
 ## Estrutura do Projeto.
 
-- `server.py`: Código do servidor PTA.
+- `pta-server.py`: Código do servidor PTA.
 - `pta-server/`
   - `users.txt`: Contém a lista de usuários autorizados a se conectar ao servidor.
   - `files/`: Diretório contendo os arquivos que podem ser solicitados pelos clientes.
@@ -33,7 +33,7 @@ Este projeto implementa um servidor para o Protocolo de Transferência de Arquiv
    
    Execute o servidor utilizando o seguinte comando:
    ```bash
-   python server.py
+   python pta-server.py
    ```
 
    O servidor irá escutar na porta `11550` por padrão. Certifique-se de que esta porta está livre antes de executar o código.
