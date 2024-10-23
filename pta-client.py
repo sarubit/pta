@@ -103,13 +103,17 @@ class PTAServer:
 
 
 def main():
-    server = PTAServer(
-        host='0.0.0.0',
-        port=11550,
-        users_file='pta-server/users.txt',
-        files_directory='pta-server/files'
-    )
-    server.start_server()
+    try:
+        server = PTAServer(
+            host='0.0.0.0',
+            port=11550,
+            users_file='pta-server/users.txt',
+            files_directory='pta-server/files'
+        )
+        server.start_server()
+    except Exception as e:
+        print(f"Erro ao iniciar o servidor: {e}")
+        input("Pressione Enter para fechar...")
 
 
 if __name__ == '__main__':
